@@ -1,0 +1,34 @@
+{
+    "name": "hooshid/laravel-lumos",
+    "description": "Tailwind components for laravel projects!",
+	"keywords": ["laravel", "ui", "hooshid"],
+	"homepage": "https://github.com/hooshid/laravel-lumos",
+    "type": "library",
+    "license": "MIT",
+	"authors": [
+        {
+            "name": "Alireza Kamali",
+            "email": "arka1373@gmail.com",
+            "homepage": "https://github.com/arkamali",
+            "role": "Developer"
+        }
+    ],
+	"minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9|^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hooshid\\Lumos\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hooshid\\Lumos\\LumosServiceProvider"
+            ]
+        }
+    }
+}
