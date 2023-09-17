@@ -29,6 +29,7 @@ class LumosServiceProvider extends ServiceProvider
         ]);
         */
 
+
         Blade::componentNamespace('Lumos\\Views\\Components', 'lumos');
     }
 }
