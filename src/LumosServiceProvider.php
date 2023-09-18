@@ -24,13 +24,14 @@ class LumosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        $this->loadViewsFrom(__DIR__ . '/resources/views/components', 'lumos');
+/*
         $this->loadViewComponentsAs('lumos', [
             Alert::class,
         ]);
+*/
 
 
-
-        //Blade::componentNamespace('Lumos\\Views\\Components', 'lumos');
+        Blade::componentNamespace('Hooshid\\Lumos\\Views\\Components', 'lumos');
     }
 }

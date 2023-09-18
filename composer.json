@@ -1,7 +1,7 @@
 {
     "name": "hooshid/laravel-lumos",
-    "description": "Tailwind components for laravel projects!",
-	"keywords": ["laravel", "ui", "hooshid"],
+    "description": "Tailwind components collection for Laravel",
+	"keywords": ["laravel", "blade", "ui", "components", "hooshid"],
 	"homepage": "https://github.com/hooshid/laravel-lumos",
     "type": "library",
     "license": "MIT",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hooshid\\Lumos\\": "src/"
+            "Hooshid\\Lumos\\": "src"
         }
     },
     "extra": {
