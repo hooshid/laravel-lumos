@@ -27,6 +27,6 @@ class Input extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.forms.input');
+        return view('lumos::forms.input');
     }
 }

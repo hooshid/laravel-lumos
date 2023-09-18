@@ -27,6 +27,6 @@ class Textarea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.forms.textarea');
+        return view('lumos::forms.textarea');
     }
 }

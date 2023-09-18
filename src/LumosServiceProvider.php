@@ -25,6 +25,6 @@ class LumosServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views/components', 'lumos');
-        Blade::componentNamespace('Hooshid\\Lumos\\Views\\Components', 'lumos');
+        Blade::componentNamespace('Hooshid\\Lumos\\View\\Components', 'lumos');
     }
 }
