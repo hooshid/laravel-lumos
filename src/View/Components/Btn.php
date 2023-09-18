@@ -11,13 +11,12 @@ class Btn extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public string $name = '',
-        public string $size = 'md',
-        public string $rounded = 'md',
-        public string $type = 'submit',
-        public string $color = 'blue',
-        public bool $block = false,
+    public function __construct(public string $name = '',
+                                public string $size = 'md',
+                                public string $rounded = 'md',
+                                public string $type = 'submit',
+                                public string $color = 'blue',
+                                public bool $block = false,
     )
     {
 
