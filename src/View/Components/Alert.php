@@ -21,6 +21,6 @@ class Alert extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('lumos::components.alert');
+        return view('lumos-ui::components.alert');
     }
 }
