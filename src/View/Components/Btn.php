@@ -27,6 +27,6 @@ class Btn extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('lumos::components.btn');
+        return view('lumos-ui::components.btn');
     }
 }
