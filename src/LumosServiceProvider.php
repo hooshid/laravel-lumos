@@ -41,7 +41,7 @@ class LumosServiceProvider extends ServiceProvider
     private function bootBladeComponents(): void
     {
         $this->callAfterResolving(BladeCompiler::class, function (BladeCompiler $blade) {
-            $namespace = 'lomus';
+            $namespace = 'lumos';
 
             $components = [
                 'alert' => Alert::class,
