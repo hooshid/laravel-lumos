@@ -28,6 +28,6 @@ class Select extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('lumos::components.forms.select');
+        return view('lumos-ui::components.forms.select');
     }
 }
