@@ -21,6 +21,6 @@ class Breadcrumb extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('lumos::components.breadcrumb');
+        return view('lumos-ui::components.breadcrumb');
     }
 }
