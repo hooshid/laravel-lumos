@@ -11,13 +11,14 @@ class Input extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $field,
-                                public string $label = '',
-                                public string $placeholder = '',
-                                public string $type = 'text',
-                                public string $size = 'md',
-                                public string $rounded = 'md',
-                                public string $value = '')
+    public function __construct(public string      $field,
+                                public string      $label = '',
+                                public string      $placeholder = '',
+                                public string      $type = 'text',
+                                public string      $size = 'md',
+                                public string      $rounded = 'md',
+                                public bool        $disabled = false,
+                                public string|null $value = '')
     {
         //
     }

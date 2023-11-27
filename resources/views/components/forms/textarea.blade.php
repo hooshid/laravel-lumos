@@ -6,8 +6,9 @@
         name="{{ $field }}"
         rows="{{ $rows }}"
         placeholder="{{ $placeholder ?: $label }}"
+        @disabled($disabled)
          @class([
-            'w-full placeholder-gray-400 bg-white border rounded-md focus:outline-none focus:border-black border-gray-300',
+            'w-full placeholder-gray-400 border rounded-md focus:outline-none focus:border-black border-gray-300',
 
             'h-9 p-1' => $size == 'xs',
             'h-10 p-1' => $size == 'sm',

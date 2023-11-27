@@ -22,7 +22,7 @@
         @if(isset($items))
             @foreach ($items as $item)
                 <option
-                    value="{{ $item[$itemValue] }}" @selected($value == $item[$itemValue])>{{ $item[$itemTitle] }}</option>
+                    value="{{ $item[$itemValue] }}" @selected(old($field, $value) == $item[$itemValue])>{{ $item[$itemTitle] }}</option>
             @endforeach
         @endif
         @if(isset($appendItem))

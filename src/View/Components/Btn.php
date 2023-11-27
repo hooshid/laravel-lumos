@@ -16,7 +16,7 @@ class Btn extends Component
                                 public string $rounded = 'md',
                                 public string $type = 'submit',
                                 public string $color = 'blue',
-                                public bool $block = false,
+                                public bool   $block = false,
     )
     {
 
