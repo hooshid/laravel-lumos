@@ -53,7 +53,7 @@ class LumosServiceProvider extends ServiceProvider
             ];
             
             foreach ($components as $alias => $component) {
-                $blade->component($component, $namespace."::".$alias);
+                $blade->component($component, $namespace."-".$alias);
             }
         });
     }
