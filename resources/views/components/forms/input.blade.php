@@ -7,8 +7,6 @@
         name="{{ $field }}"
         value="{{ $value ?: old($field) }}"
         placeholder="{{ $placeholder ?: $label }}"
-        @disabled($disabled)
-
         @class([
             'w-full placeholder-gray-400 border rounded-md focus:outline-none focus:border-black border-gray-300',
 
@@ -19,7 +17,9 @@
             'h-14 p-4' => $size == 'xl',
 
             'border-red-500' => $errors->has($field),
-        ])>
+        ])
+        {{ $attributes->exceptProps(['class']) }}
+    >
 
     @error($field)
     <div class="text-red-500 text-xs mt-1 p-1 font-bold" role="alert">
