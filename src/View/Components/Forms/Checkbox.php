@@ -17,7 +17,7 @@ class Checkbox extends Component
                                 public string  $name = '',
                                 public bool    $checked = false,
                                 public bool    $multi = false,
-                                public ?string $selected = '',
+                                public string|array|null $selected = null,
                                 public string  $iconUrl = '')
     {
         //
