@@ -14,6 +14,7 @@ class Radio extends Component
     public function __construct(public string      $field,
                                 public string      $label = '',
                                 public string|null $value = '',
+                                public string|null $selectedValue = '',
                                 public bool        $checked = false)
     {
         //

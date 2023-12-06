@@ -5,7 +5,7 @@
         name="{{ $field }}"
         id="{{ $field }}{{ $value }}"
         value="{{ $value }}"
-        @checked(old($field)==$value)/>
+        @checked(old($field, $selectedValue)==$value)/>
 
     <label
         class="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"

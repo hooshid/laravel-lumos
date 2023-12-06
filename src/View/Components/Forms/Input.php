@@ -17,6 +17,7 @@ class Input extends Component
                                 public string      $type = 'text',
                                 public string      $size = 'md',
                                 public string      $rounded = 'md',
+                                public bool        $disabled = false,
                                 public string|null $value = '')
     {
         //

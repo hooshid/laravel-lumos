@@ -11,14 +11,14 @@ class Checkbox extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string  $field,
-                                public string  $label = '',
-                                public string  $value = '',
-                                public string  $name = '',
-                                public bool    $checked = false,
-                                public bool    $multi = false,
+    public function __construct(public string            $field,
+                                public string            $label = '',
+                                public string            $value = '',
+                                public string            $name = '',
+                                public bool              $checked = false,
+                                public bool              $multi = false,
                                 public string|array|null $selected = null,
-                                public string  $iconUrl = '')
+                                public string            $iconUrl = '')
     {
         //
     }

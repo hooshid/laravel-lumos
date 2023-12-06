@@ -7,6 +7,7 @@
         name="{{ $field }}"
         value="{{ $value ?: old($field) }}"
         placeholder="{{ $placeholder ?: $label }}"
+        @disabled($disabled)
         @class([
             'w-full placeholder-gray-400 border rounded-md focus:outline-none focus:border-black border-gray-300',
 
