@@ -30,3 +30,26 @@
         @endif
     </ol>
 </nav>
+
+@if(count($items))
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        @foreach($items as $item)
+        {
+            "@type": "ListItem",
+            "position": {{ $loop->iteration	 }},
+            "name": "{{ $item['title'] }}",
+            @if ($loop->last)
+            "item": "{{ urldecode(url()->current()) }}"
+@else
+            "item": "{{ url($item['url']) }}"
+            @endif
+        }@if (!$loop->last),@endif
+        @endforeach
+        ]
+    }
+</script>
+@endif
