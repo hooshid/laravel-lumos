@@ -49,6 +49,7 @@
                class="inline-flex flex-col items-center text-center justify-center w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer peer-checked:bg-green-100 peer-checked:border-green-600 peer-checked:border-2 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
             <img src="{{ url($iconUrl) }}" class="w-20"/>
             <div class="w-full text-lg font-semibold">{{ $label }}</div>
+            <div class="w-full text-xs font-semibold">{{ $description }}</div>
         </label>
     @endif
 </div>
