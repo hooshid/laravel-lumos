@@ -1,7 +1,7 @@
 {
     "name": "hooshid/laravel-lumos",
     "description": "Tailwind components collection for Laravel",
-	"keywords": ["laravel", "blade", "ui", "components", "hooshid"],
+	"keywords": ["laravel", "blade", "UI", "components", "hooshid"],
 	"homepage": "https://github.com/hooshid/laravel-lumos",
     "type": "library",
     "license": "MIT",
